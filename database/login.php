@@ -14,7 +14,7 @@
 	 			if (password_verify($pwd, $user['password'])) {
 	 				session_start();
 	 				$_SESSION['username'] = $user['username'];
-	 				header('Location: ../index.php?success=login');
+	 				header('Location: ../list.php?success=login');
 		 			exit();
 	 			}
 	 			else {
