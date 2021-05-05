@@ -1,0 +1,23 @@
+form {
+  @include flexy($dir: column, $just: center, $align: flex-start);
+  width: 90%;
+  max-width: 300px;
+  background: $color-primary;
+  color: #fff;
+  padding: 0.65rem 0.85rem 0;
+  border-top: 6px solid $color-secondary;
+
+  input {
+    width: 100%;
+    margin-bottom: 0.45rem;
+    padding: 0.15rem 0.35rem;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  h6 {
+    margin-bottom: 0.45rem;
+  }
+}

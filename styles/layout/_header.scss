@@ -1,0 +1,10 @@
+.header {
+  &-upper {
+    @include flexy($dir: row, $just: space-between, $align: center);
+    height: 75px;
+  }
+
+  &-lower {
+    height: 35px;
+  }
+}

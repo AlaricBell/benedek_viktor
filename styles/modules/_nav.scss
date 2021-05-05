@@ -1,0 +1,64 @@
+.nav {
+  &-navbar {
+    @include flexy($dir: row, $just: flex-start, $align: center);
+    height: 100%;
+    ul {
+      @include flexy($dir: row, $just: flex-start, $align: center);
+      color: $color-primary;
+      height: 100%;
+      li {
+        height: 100%;
+        padding: 0.35rem 2.15rem 0.35rem 0;
+
+        a {
+          font-size: 16px;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+      }
+
+      li:last-of-type {
+        border-right: 1px solid rgba(#aeb4b7, 0.3);
+      }
+    }
+  }
+
+  &-account {
+    @include flexy($dir: column, $just: center, $align: center);
+    margin-right: 1.25rem;
+
+    ul {
+      @include flexy($dir: row, $just: flex-end, $align: center);
+      color: $color-primary;
+      padding: 0.45rem 0;
+
+      li {
+        padding: 0 0.75rem;
+        font-size: 14px;
+
+        .link-account {
+          font-weight: 600;
+        }
+
+        img {
+          margin-right: 0.45rem;
+        }
+
+        select {
+          border: none;
+          outline: none;
+          background: transparent;
+          color: $color-primary;
+        }
+      }
+
+      li:nth-of-type(1) {
+        border-right: 1px solid rgba($color-primary, 0.4);
+      }
+    }
+
+    ul:nth-of-type(1) {
+      border-bottom: 1px solid $color-primary;
+    }
+  }
+}

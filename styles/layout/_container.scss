@@ -1,0 +1,51 @@
+main {
+  width: 100%;
+  height: calc(100% - 165px);
+  @include flexy($dir: column, $just: center, $align: center);
+}
+
+.container {
+  width: 80%;
+  max-width: 1600px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  &-fluid {
+    width: 100%;
+    height: auto;
+  }
+
+  &-list {
+    @include flexy($dir: column, $just: center, $align: center);
+  }
+
+  &-auth {
+    @include flexy($dir: column, $just: center, $align: center);
+  }
+
+  &-nav {
+    border-bottom: 2px solid rgba(#aeb4b7, 0.3);
+    border-top: 2px solid rgba(#aeb4b7, 0.3);
+    box-shadow: 0 0 5px 1px rgba(#aeb4b7, 0.2);
+
+    &-account {
+      @include flexy($dir: row, $just: flex-end, $align: center);
+    }
+  }
+
+  &-brand {
+    @include flexy($dir: row, $just: start, $align: center);
+
+    img {
+      border-right: 2px solid $color-secondary;
+      padding-right: 0.75rem;
+    }
+
+    h2 {
+      color: $color-primary;
+      padding-left: 0.75rem;
+      text-transform: uppercase;
+    }
+  }
+}
